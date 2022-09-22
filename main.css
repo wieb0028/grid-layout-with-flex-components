@@ -1,10 +1,7 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #222;
-    display: grid;
-    grid:   auto
-    grid-gap: 10px;
-    padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 50%;
+  margin: auto;
   }
 
   .emoji {
@@ -16,6 +13,8 @@ body {
   .emoji h2 {
     margin: 0;
     border-bottom: 2px solid #ccc;
+    display: flex;
+    justify-content: center;
   }
   
   .emoji a {
@@ -24,8 +23,20 @@ body {
     color: white;
     padding: 1rem;
     border-radius: 8px;
+    display: flex;
+    justify-content: center;
   }
   
   .icon {
     font-size: 4rem;
+    display: flex;
+    justify-content: center;
   }
+
+  .emojis{
+    display: grid;
+    grid-template-columns: [column1] 300PX [column2] 300PX;
+    grid-template-rows: [row1] 365px [row2] 365px;
+    grid-gap: 60px;
+  }
+
